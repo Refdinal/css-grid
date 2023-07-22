@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      .container {
+        height: 80vh;
+        width: 80%;
+        background-color: black;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(32, 3.125%);
+        grid-template-rows: repeat(16, 6.25%);
+        border: 4.5px solid black;
+      }
+
+      .red {
+        background-color: red;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .white {
+        background-color: white;
+      }
+      .black {
+        background-color: black;
+      }
+      .items {
+        border: 4.5px solid black;
+      }
+      .item1 {
+        grid-area: 1 / 1 / 5 / 2;
+      }
+      .item2 {
+        grid-area: 5 / 1 / 17 / 2;
+      }
+      .item3 {
+        grid-area: 1 / 2 / 9 / 10;
+      }
+      .item4 {
+        grid-area: 9 / 2 / 13 / 6;
+      }
+      .item5 {
+        grid-area: 13 / 2 / 17 / 6;
+      }
+      .item6 {
+        grid-area: 9 / 6 / 11 / 10;
+      }
+      .item7 {
+        grid-area: 11 / 6 / 13 / 10;
+      }
+      .item8 {
+        grid-area: 13 / 6 / 15 / 10;
+      }
+      .item9 {
+        grid-area: 15 / 6 / 17 / 15;
+      }
+      .item10 {
+        grid-area: 1 / 10 / 5 / 15;
+      }
+      .item11 {
+        grid-area: 5 / 10 / 9 / 12;
+      }
+      .item12 {
+        grid-area: 5 / 12 / 9 / 15;
+      }
+      .item13 {
+        grid-area: 9 / 10 / 11 / 15;
+      }
+      .item14 {
+        grid-area: 11 / 10 / 15 / 15;
+      }
+      .item15 {
+        grid-area: 1 / 15 / 5 / 19;
+      }
+      .item16 {
+        grid-area: 5 / 15 / 9 / 19;
+      }
+      .item17 {
+        grid-area: 9 / 15 / 13 / 19;
+      }
+      .item18 {
+        grid-area: 13 / 15 / 17 / 19;
+      }
+      .item19 {
+        grid-area: 1 / 19 / 3 / 28;
+      }
+      .item20 {
+        grid-area: 3 / 19 / 7 / 24;
+      }
+      .item21 {
+        grid-area: 7 / 19 / 9 / 24;
+      }
+      .item22 {
+        grid-area: 9 / 19 / 13 / 22;
+      }
+      .item23 {
+        grid-area: 9 / 22 / 13 / 24;
+      }
+      .item24 {
+        grid-area: 13 / 19 / 17 / 24;
+      }
+      .item25 {
+        grid-area: 3 / 24 / 5 / 28;
+      }
+      .item26 {
+        grid-area: 5 / 24 / 7 / 28;
+      }
+      .item27 {
+        grid-area: 7 / 24 / 9 / 28;
+      }
+      .item28 {
+        grid-area: 9 / 24 / 17 / 32;
+      }
+      .item29 {
+        grid-area: 1 / 28 / 5 / 32;
+      }
+      .item30 {
+        grid-area: 5 / 28 / 9 / 32;
+      }
+      .item31 {
+        grid-area: 1 / 32 / 12 / 33;
+      }
+      .item32 {
+        grid-area: 12 / 32 / 17 / 33;
+      }
+      h1 {
+        position: absolute;
+        margin-top: -80vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item1 items white"></div>
+      <div class="item2 items white"></div>
+      <div class="item3 items red"></div>
+      <div class="item4 items black"></div>
+      <div class="item5 items white"></div>
+      <div class="item6 items white"></div>
+      <div class="item7 items white"></div>
+      <div class="item8 items black"></div>
+      <div class="item9 items red"></div>
+      <div class="item10 items yellow"></div>
+      <div class="item11 items white"></div>
+      <div class="item12 items white"></div>
+      <div class="item13 items white"></div>
+      <div class="item14 items blue"></div>
+      <div class="item15 items white"></div>
+      <div class="item16 items blue"></div>
+      <div class="item17 items white"></div>
+      <div class="item18 items white"></div>
+      <div class="item19 items blue"></div>
+      <div class="item20 items red"></div>
+      <div class="item21 items white"></div>
+      <div class="item22 items white"></div>
+      <div class="item23 items red"></div>
+      <div class="item24 items yellow"></div>
+      <div class="item25 items black"></div>
+      <div class="item26 items white"></div>
+      <div class="item27 items white"></div>
+      <div class="item28 items blue"></div>
+      <div class="item29 items white"></div>
+      <div class="item30 items yellow"></div>
+      <div class="item31 items white"></div>
+      <div class="item32 items red"></div>
+    </div>
+    <br />
+    <h1>CSS GRID MONDRIAN PAINTING</h1>
+  </body>
+</html>
